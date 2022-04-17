@@ -8,4 +8,5 @@ Our model focuses on data extraction of three sets of data: the sum of bond leng
 ![Model_setup](https://github.com/CondaPereira/MolEV/blob/main/images/Model_1.png)
 ## Protein Model Setup
 The protein-based model is still under development, and the dataset we use is mainly from PDBbind, after which we will also extract the 3D information from the dataset for the target information as input to our model.  
-PDBbind link:
+PDBbind link: http://www.pdbbind.org.cn/quickpdb.php?quickpdb=5ho7  
+
