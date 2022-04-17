@@ -2,7 +2,6 @@
 [![Header](https://github.com/CondaPereira/MolEV/blob/main/images/Molecular.png "Header")](https://some-url.dev/)
 --------------------------------------------------------------------------------
 As follow is the work of team VE_CPU-iDEC this year:
-![Team Logo](https://github.com/Peldom/Peplib_Generator/blob/main/README_Support/Teamlogo.png)
 
 ## Model Setup
 Our model focuses on data extraction of three sets of data: the sum of bond lengths of molecules, the angle between two atoms, and the diagonal of parallelograms. The molecular information mentioned above is all in three dimensions, which can improve our docking model to some extent.  
