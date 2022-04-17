@@ -9,7 +9,7 @@ Our model focuses on data extraction of three sets of data: the sum of bond leng
 ![Model_setup](https://github.com/CondaPereira/MolEV/blob/main/images/Model_1.png)
 
 ### Way to optimize our micromolcules
-We will develop a deep learning based molecule generation framework and compare it with the optimized small molecule structures from the other two approaches and measure the accuracy of our model by this criterion, now we have mainly optimized the small molecule bulk structure of xtb at GFN2-xtb level and bulk small molecule optimization under the MMFF force field of RDkit, the model ConfEVG is still in the development stage and will be updated at a later stage.
+We will develop a deep learning based molecule generation framework and compare it with the optimized small molecule structures from the other two approaches and measure the accuracy of our model by this criterion, now we have mainly optimized the small molecule bulk structure of xtb at GFN2-xtb level and bulk small molecule optimization under the MMFF force field of RDkit, the model ConfEVG is still in the development stage and will be updated at a later stage.  
     xtb /mnt/c/Users/chris/Downloads/sdf/smi/test/test_$i/test_$i.sdf --opt extreme --charge 0 --alpb water
 ## Protein Model Setup
 The protein-based model is still under development, and the dataset we use is mainly from PDBbind and Uniprot, after which we will also extract the 3D information from the dataset for the target information as input to our model.  
