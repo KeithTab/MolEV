@@ -19,7 +19,8 @@ In the past QED function, the following indicators were used to fit the function
 
 ![ClogP_setup](https://github.com/CondaPereira/MolEV/blob/main/images/CPDN.png)
 
-And since ClogP satisfies the asymmetric distribution, it is consistent with the ADS fitting function given in the literature as follows.
+And since ClogP satisfies the asymmetric distribution, it is consistent with the ADS fitting function given in the literature as follows.  
+
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=d(x)=a+\frac{b}{1+exp(-\frac{x-c-\frac{d}{2}}{e})}\cdot[1-\frac{1}{1+exp(-\frac{x-c-\frac{d}{2}}{f})}]" style="border:none;">
 
 ## Protein Model Setup
