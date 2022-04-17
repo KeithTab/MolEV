@@ -27,7 +27,7 @@ The above is the optimization of the set of molecules that have not undergone hi
 
 ![pennylane_setup](https://github.com/CondaPereira/MolEV/blob/main/images/circuit.png)
 
-### 2.QED function optimization
+### 2.QED function improvement
 In the past QED function, the following indicators were used to fit the function, but of course the following indicators all conform to the form of asymmetric functions, showing specific distribution curves: molecular weight (MW), octanol-water distribution coefficient (ALOGP), number of hydrogen bond donors (HBD), number of hydrogen bond acceptors (HBA), molecular polar surface area (PSA), number of rotatable bonds (ROTB), number of aromatic rings (AROM), number of structural cues (ALERTS), to which we propose to add the solubility term (logP), which plays an important role in assessing the drug-forming properties of small molecules.  
 
 ![ClogP_setup](https://github.com/CondaPereira/MolEV/blob/main/images/CPDN.png)
