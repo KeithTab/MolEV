@@ -36,6 +36,8 @@ And since ClogP satisfies the asymmetric distribution, it is consistent with the
 
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=d(x)=a+\frac{b}{1+exp(-\frac{x-c-\frac{d}{2}}{e})}\cdot[1-\frac{1}{1+exp(-\frac{x-c-\frac{d}{2}}{f})}]" style="border:none;">
 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;d(x)=a+\frac{b}{1+exp(-\frac{x-c-\frac{d}{2}}{e})}\cdot[1-\frac{1}{1+exp(-\frac{x-c-\frac{d}{2}}{f})}]" title="\Large d(x)=a+\frac{b}{1+exp(-\frac{x-c-\frac{d}{2}}{e})}\cdot[1-\frac{1}{1+exp(-\frac{x-c-\frac{d}{2}}{f})}]" />
+
 ## 2.Protein Model Setup
 The protein-based model is still under development, and the dataset we use is mainly from PDBbind and Uniprot, after which we will also extract the 3D information from the dataset for the target information as input to our model.  
 PDBbind link: http://www.pdbbind.org.cn/quickpdb.php?quickpdb=5ho7  
