@@ -34,7 +34,9 @@ In the past QED function, the following indicators were used to fit the function
 
 And since ClogP satisfies the asymmetric distribution, it is consistent with the ADS fitting function given in the literature as follows.  
 
+<p align="center">
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;d(x)=a+\frac{b}{1+exp(-\frac{x-c-\frac{d}{2}}{e})}\cdot[1-\frac{1}{1+exp(-\frac{x-c-\frac{d}{2}}{f})}]" title="\Large d(x)=a+\frac{b}{1+exp(-\frac{x-c-\frac{d}{2}}{e})}\cdot[1-\frac{1}{1+exp(-\frac{x-c-\frac{d}{2}}{f})}]" />
+</p>
 
 ## 2.Protein Model Setup
 The protein-based model is still under development, and the dataset we use is mainly from PDBbind and Uniprot, after which we will also extract the 3D information from the dataset for the target information as input to our model.  
