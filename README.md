@@ -8,9 +8,9 @@ Our model focuses on data extraction of three sets of data: the sum of bond leng
 
 ![Model_setup](https://github.com/CondaPereira/MolEV/blob/main/images/Model_1.png)
 
-#### blender Model example display:
+#### VE_CPU team:
 
-![blender_setup](https://github.com/CondaPereira/MolEV/blob/main/images/moleclar.png)  
+![blender_setup](https://github.com/CondaPereira/MolEV/blob/main/images/teamimg.png)  
 
 ### 1.Way to optimize our micromolcules
 We will develop a deep learning based molecule generation framework and compare it with the optimized small molecule structures from the other two approaches and measure the accuracy of our model by this criterion, now we have mainly optimized the small molecule bulk structure of xtb at GFN2-xtb level and bulk small molecule optimization under the MMFF force field of RDkit, the model ConfEVG is still in the development stage and will be updated at a later stage.  
