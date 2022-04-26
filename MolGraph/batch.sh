@@ -17,9 +17,21 @@ do
 	/home/szk/miniconda3/bin/python normalizer.py -i /home/szk/sdf/txt/test_$i/list2.txt -o /home/szk/sdf/txt/test_$i/2.txt
 	/home/szk/miniconda3/bin/python normalizer.py -i /home/szk/sdf/txt/test_$i/list3.txt -o /home/szk/sdf/txt/test_$i/3.txt
 	cd test_$i
-	while read number; do echo -n "0x"; echo "obase=16; ibase=10; $number" | bc; done < 1.txt > a1.txt
-	while read number; do echo -n "0x"; echo "obase=16; ibase=10; $number" | bc; done < 2.txt > a2.txt
-	while read number; do echo -n "0x"; echo "obase=16; ibase=10; $number" | bc; done < 3.txt > a3.txt
+	while read number
+	do 
+		echo -n "0x"
+		echo "obase=16; ibase=10; $number" | bc 
+	done < 1.txt > a1.txt
+	while read number
+	do 
+		echo -n "0x" 
+		echo "obase=16; ibase=10; $number" | bc 
+	done < 2.txt > a2.txt
+	while read number
+	do 
+		echo -n "0x"
+		echo "obase=16; ibase=10; $number" | bc 
+	done < 3.txt > a3.txt
 	paste a1.txt a2.txt a3.txt >> all.txt
 	paste 1.txt 2.txt 3.txt >> dec.txt
 	cd ..
