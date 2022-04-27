@@ -15,6 +15,7 @@ Secondly, the python dependencies you need.
 #### 2. Setup Python dependencies 
 
 Dependencies:
+- Multiwfn >= 3.7
 - argparse
 - rdkit >= 2020.09.3.0
 - numpy 
