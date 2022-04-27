@@ -89,3 +89,4 @@ except:
 i = 0
 while i < args.num_mols:
     i = gen(i)
+os.system("rm -rf args.o/*.mol2")
