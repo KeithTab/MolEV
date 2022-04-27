@@ -61,14 +61,6 @@ brick_linker_pairs, linker_brick_pairs = process_binding_data(raw_bricks, raw_li
 
 
 def gen(i):
-    """
-    Generates a single molecule under 500MW
-    Args:
-        i: current iterator, determines file-name
-
-    Returns: i+1 if generation was successful, i otherwise
-
-    """
     G = GeneratedMol(brick_linker_pairs, linker_brick_pairs, mol_bricks, mol_linkers)
     G.enable_recursion(np.random.randint(0, len(mol_bricks) - 1))
     try:
