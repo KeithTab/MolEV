@@ -14,7 +14,7 @@ export PATH=$PATH:/path/to/openbabel/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/openbabel/lib
 ```
 #### 2. eSynth build process
-```
+```ruby
 tar -zxf esynth-version.gz
 mv esynth-version esynth
 cd esynth
@@ -28,3 +28,10 @@ GSL_INC=/usr/include/
 make
 export PATH=$PATH:/path/to/esynth/src
 ```
+## Run scripts to generate fragments of molecule  
+```ruby
+python ConfigurePath.py # In order to confirm your software path
+python eMolFrag.py -i /path/to/your/mol2_dataset -o /path/to/results -p 2 -m 0 -c 0
+```
+#### Result display  
+
