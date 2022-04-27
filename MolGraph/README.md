@@ -95,7 +95,7 @@ When you need to merge the images to a color map, please run steps as follows:
 2. ./batch.sh
 ```
 
-## Results  
+## Results (Molcular to graph) 
 <p align="center">
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_1.bmp" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp;
@@ -103,3 +103,6 @@ When you need to merge the images to a color map, please run steps as follows:
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_3.bmp" width="200">
 </p>
+
+## Notice  
+📩if you have any questions about runing these scripts, please send emails to szkchris@sina.com
