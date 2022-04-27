@@ -4,7 +4,9 @@ Our main program for converting molecules to images is written in Go, where we c
 #### 1. Generate executable program rgb2bmp(Ubuntu20 system)  
 First of all, you need to configure the relevant environment.  
 ```
+sudo apt update && sudo apt upgrade -y
 sudo apt install gcc g++ gfortran build-essential zlib1g-dev libgsl-dev
+sudo apt install golang
 conda create -n rdkit python=3.8
 conda activate rdkit 
 conda conda install -c conda-forge rdkit
@@ -22,3 +24,7 @@ Dependencies:
 - contexlib >= 21.6.0
 - multiprocessing
 
+#### 3. Compile the exec transfer
+```
+go build rgb2bmp.go
+```
