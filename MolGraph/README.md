@@ -37,7 +37,7 @@ if it have output as follows, you have been access to success:
 ```ruby
 main start, para info:
 para0: testbmp
-para1: test-go.bmp
+para1: test.bmp
 para2: 3
 para3: 1920
 para4: 1080
