@@ -108,5 +108,5 @@ When you need to merge the images to a color map, please run steps as follows:
 </p>
 
 ## Notice && Reference
-📩if you have any questions about runing these scripts, please send emails to szkchris@sina.com
+📩if you have any questions about runing these scripts, please send emails to szkchris@sina.com  
 [1]:Tian Lu, Feiwu Chen, Multiwfn: A Multifunctional Wavefunction Analyzer, J. Comput. Chem. 33, 580-592 (2012) DOI: 10.1002/jcc.22885
