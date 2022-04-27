@@ -1,5 +1,6 @@
 import os
 import torch
+import argparse
 from img2mol.inference import *
 
 os.listdir("model/")
@@ -14,6 +15,11 @@ else:
 img2mol = Img2MolInference(model_ckpt = "model/model.ckpt", device=device)
 
 cddd_server = CDDDRequest()
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--input", required = True,
+                help = "path to our in processed files")
+args = vars(ap.parse_args())
 
 class BatchRename():
     def __init__(self):
@@ -50,4 +56,7 @@ def read_path(file_pathname):
         res["mol"]
         print(res["smiles"],file=f)
 
-read_path("RAD51_molp/")
+read_path("args["input"]") 
+"""
+if here cannot run correctly, please change args["input"] to .png or .jpg filepath which you have stored  
+"""
