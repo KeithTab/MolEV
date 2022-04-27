@@ -5,4 +5,5 @@ Our main program for converting molecules to images is written in Go, where we c
 First of all, you need to configure the relevant environment.  
 ```
 sudo apt install gcc g++ gfortran build-essential zlib1g-dev libgsl-dev
+conda create -n 
 ```
