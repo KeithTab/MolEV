@@ -5,7 +5,7 @@ As follow is the work of team VE_CPU-iDEC this year:
 
 #### VE_CPU team:
 <div align=center>
-<img src="https://github.com/CondaPereira/MolEV/blob/main/images/teamimg.jpg">  
+<img src="https://github.com/CondaPereira/MolEV/blob/main/images/team.png">  
 </div>  
 
 ## 1.Micromolecular Model Setup  
