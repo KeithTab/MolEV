@@ -37,5 +37,5 @@ python eMolFrag.py -i /path/to/your/mol2_dataset -o /path/to/results -p 2 -m 0 -
 <p align="center">
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group1.png" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group2.png" width="200">
+  <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group4.png" width="200">
 </p>
