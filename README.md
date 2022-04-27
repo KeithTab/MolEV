@@ -24,7 +24,7 @@ xtb /mnt/c/Users/chris/Downloads/sdf/smi/test/test_$i/test_$i.sdf --opt extreme 
 
 Of course, our model also encounters special cases, such as the following molecule with a ternary ring, in which case the model generates certain paradoxes in the theory, so we choose the middle atom Atom(Mid) among every three atoms as the vertex and create a spatial 3D vector with the two surrounding atoms.
 <div align=center>
-<img src="https://github.com/CondaPereira/MolEV/blob/main/images/Ternary%20ring.png" width="200">
+<img src="https://github.com/CondaPereira/MolEV/blob/main/images/Ternary%20ring.png" width="450">
 </div>
 The above is the optimization of the set of molecules that have not undergone high throughput screening. After the DDI design with MolEV, we will extract the ligand conformations with excellent scores and use quantum calculations to optimize their bond lengths for the next step of more specific quantum chemical calculations and calculate their physicochemical properties such as spectra.  
 
