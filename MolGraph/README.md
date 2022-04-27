@@ -102,6 +102,8 @@ When you need to merge the images to a color map, please run steps as follows:
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_2.bmp" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_3.bmp" width="200">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_4.bmp" width="200">
 </p>
 
 ## Notice  
