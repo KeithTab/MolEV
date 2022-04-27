@@ -15,6 +15,7 @@ Secondly, the python dependencies you need.
 #### 2. Setup Python dependencies 
 
 Dependencies:
+- Img2mol >= 0.1.0
 - Multiwfn >= 3.7
 - argparse
 - networkx
