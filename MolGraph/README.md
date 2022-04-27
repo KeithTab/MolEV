@@ -91,7 +91,7 @@ int main(const int argc, const char** argv)
 ```
 When you need to merge the images to a color map, please run steps as follows:
 ```
-1. chmod +x batch.sh
+1. chmod +x batch.sh (modify it according to your own need)
 2. ./batch.sh
 ```
 
