@@ -70,11 +70,10 @@ int main(const int argc, const char** argv)
     int  height = 360;
     int  format = FORMAT_RGB;
     
-	char colorR = 0xff;
+    char colorR = 0xff;
     char colorG = 0xff;
-	char colorB = 0x00;
+    char colorB = 0x00;
     
-
     int size = width * height * format;
     char* pRgb = (char*)malloc(size);
 
