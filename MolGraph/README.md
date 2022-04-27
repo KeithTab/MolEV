@@ -62,5 +62,6 @@ size    : 40
 {40 1920 1080 1 24 0 0 3780 3780 0 0}
 {255 255 0}
 ```
-When you have finished generating one color image, you will need to merge the images of whole molecule so that you can get a color map about one molecular for classification, meanwhile we plan to calculate the AQED, containing molecular descriptors such as the number of benzene rings for the subsequent image classification problem. If you only want to generate one group data based on (θ_1)
+When you have finished generating one color image, you will need to merge the images of whole molecule so that you can get a color map about one molecular for classification, meanwhile we plan to calculate the AQED, containing molecular descriptors such as the number of benzene rings for the subsequent image classification problem. If you only want to generate one group data based on (θ,δ,φ), you can infer the C++ code 'main.cpp':  
+
 
