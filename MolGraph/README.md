@@ -5,5 +5,20 @@ Our main program for converting molecules to images is written in Go, where we c
 First of all, you need to configure the relevant environment.  
 ```
 sudo apt install gcc g++ gfortran build-essential zlib1g-dev libgsl-dev
-conda create -n 
+conda create -n rdkit python=3.8
+conda activate rdkit 
+conda conda install -c conda-forge rdkit
 ```
+Secondly, the python dependencies you need.  
+#### 2. Python Dependen## Setup and dependencies 
+
+Dependencies:
+- argparse
+- rdkit >= 2020.09.3.0
+- numpy 
+- pillow 
+- pandas
+- pennylane 
+- contexlib >= 21.6.0
+- multiprocessing
+
