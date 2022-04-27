@@ -97,7 +97,7 @@ When you need to merge the images to a color map, please run steps as follows:
 
 ## Results  
 <p float="left">
-  <img src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_1.bmp" width="100" />
-  <img src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_2.bmp" width="100" /> 
-  <img src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_3.bmp" width="100" />
+  <img src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_1.bmp" width="200" />
+  <img src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_2.bmp" width="200" /> 
+  <img src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_3.bmp" width="200" />
 </p>
