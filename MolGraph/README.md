@@ -89,4 +89,8 @@ int main(const int argc, const char** argv)
     free(pRgb);
 }
 ```
-
+When you need to merge the images to a color map, please run steps as follows:
+```
+1. chmod +x batch.sh
+2. ./batch.sh
+```
