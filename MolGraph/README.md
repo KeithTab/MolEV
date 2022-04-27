@@ -12,7 +12,7 @@ conda activate rdkit
 conda conda install -c conda-forge rdkit
 ```
 Secondly, the python dependencies you need.  
-#### 2. Python Dependen## Setup and dependencies 
+#### 2. Setup Python dependencies 
 
 Dependencies:
 - argparse
