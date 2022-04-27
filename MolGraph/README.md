@@ -15,6 +15,7 @@ Secondly, the python dependencies you need.
 #### 2. Setup Python dependencies 
 
 Dependencies:
+- torch >= 1.8.2
 - Img2mol >= 0.1.0
 - Multiwfn >= 3.7
 - argparse
@@ -26,6 +27,7 @@ Dependencies:
 - pennylane 
 - contexlib >= 21.6.0
 - multiprocessing
+- cudatoolkit = 11.1
 
 #### 3. Compile the exec transfer
 ```
