@@ -17,6 +17,7 @@ Secondly, the python dependencies you need.
 Dependencies:
 - Multiwfn >= 3.7
 - argparse
+- networkx
 - rdkit >= 2020.09.3.0
 - numpy 
 - pillow 
