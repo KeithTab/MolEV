@@ -43,5 +43,5 @@ python eMolFrag.py -i /path/to/your/mol2_dataset -o /path/to/results -p 2 -m 0 -
 ## Generate creative molecule (not Orientation)  
 
 ```ruby
-python /fragmix/fragmix.py --i your/path/to/emolfrag_output --draw --num your definition(default set to 10) 
+python /fragmix/fragmix.py --i your/path/to/emolfrag_output --draw --num your definition(default set to 100) 
 ```
