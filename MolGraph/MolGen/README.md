@@ -38,6 +38,10 @@ python eMolFrag.py -i /path/to/your/mol2_dataset -o /path/to/results -p 2 -m 0 -
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group1.png" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group4.png" width="200">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group5.png" width="200">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group6.png" width="200">
 </p>  
 
 ## Generate creative molecule (not Orientation)  
