@@ -63,5 +63,31 @@ size    : 40
 {255 255 0}
 ```
 When you have finished generating one color image, you will need to merge the images of whole molecule so that you can get a color map about one molecular for classification, meanwhile we plan to calculate the AQED, containing molecular descriptors such as the number of benzene rings for the subsequent image classification problem. If you only want to generate one group data based on (θ,δ,φ), you can infer the C++ code 'main.cpp':  
+```ruby
+int main(const int argc, const char** argv)
+{
+    int  width = 640;
+    int  height = 360;
+    int  format = FORMAT_RGB;
+    
+	char colorR = 0xff;
+    char colorG = 0xff;
+	char colorB = 0x00;
+    
 
+    int size = width * height * format;
+    char* pRgb = (char*)malloc(size);
+
+    for (int i = 0; i < width * height; i++)
+    {
+        pRgb[i * format] = colorR[1024];
+        pRgb[i * format + 1] = colorG;
+        pRgb[i * format + 2] = colorB;
+    }
+
+    rgbaToBmpFile((char*)"test.bmp", pRgb, width, height, format);
+
+    free(pRgb);
+}
+```
 
