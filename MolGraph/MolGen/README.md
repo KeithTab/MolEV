@@ -38,4 +38,8 @@ python eMolFrag.py -i /path/to/your/mol2_dataset -o /path/to/results -p 2 -m 0 -
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group1.png" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/MolGen/img/group4.png" width="200">
-</p>
+</p>  
+## Generate creative molecule (not Orientation)   
+```ruby
+python /fragmix/fragmix.py --i your/path/to/emolfrag_output --draw --num your definition(default set to 10) 
+```
