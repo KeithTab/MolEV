@@ -3,6 +3,7 @@ import numpy as np
 
 class MolBuilder:
     def __init__(self, molecule):
+
         self.mol = molecule
         self.bound = False
 
@@ -17,11 +18,11 @@ class MolBuilder:
         self.binder_atoms_numbers = binder_atoms_numbers
 
     def setup_recursive_binders(self, binder_objects):
- 
+
         self.binder_objects = binder_objects
 
     def sample_binder(self):
- 
+
         if not self.bound:
             (
                 chosen_binders,
