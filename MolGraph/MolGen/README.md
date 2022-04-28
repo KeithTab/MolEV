@@ -8,7 +8,7 @@ tar -zxf openbabel-version.tar.gz
 cd yourpath && mv openbabel-version openbabel
 cd openbabel
 mkdir build && cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=~/apps/openbabel-2.3.1/
+cmake .. -DCMAKE_INSTALL_PREFIX=/your/path/to/openbabel
 make -j 8 && make install -j 8
 export PATH=$PATH:/path/to/openbabel/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/openbabel/lib
