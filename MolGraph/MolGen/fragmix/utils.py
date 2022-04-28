@@ -8,8 +8,8 @@ def process_binding_data(raw_bricks, raw_linkers):
             filter(
                 None,
                 x[
-                    x.index("> <connect> ")
-                    + 1 : x.index("> <片段相似性> ")
+                    x.index("> <BRANCH @atom-number eligible-atmtype-to-connect> ")
+                    + 1 : x.index("> <fragments similar> ")
                 ],
             )
         )
@@ -20,7 +20,7 @@ def process_binding_data(raw_bricks, raw_linkers):
             filter(
                 None,
                 x[
-                    x.index("> <原子连接的最大数量> ")
+                    x.index("> <MAX-NUMBER-Of-CONTACTS ATOMTYPES> ")
                     + 1 : x.index("$$$$")
                 ],
             )
@@ -44,7 +44,7 @@ def process_binding_data(raw_bricks, raw_linkers):
             elif int(atom[0]) > 0:
                 temp_atom_binder_list.append(
                     [i, int(atom[0]), atom[1]]
-                )  # index, max number of bonds, atom type
+                )  # index, max number of bonds and our atom type
             else:
                 assert False
         cleaned_linkers.append(temp_atom_binder_list)
@@ -61,7 +61,6 @@ def process_binding_data(raw_bricks, raw_linkers):
                             [j, int(binding_site[0]) - 1, atom[0]]
                         )
         brick_linker_pairs.append(compatable_linkers_for_brick)
-    # brick_linker_pairs[brick_number] = [linker_index, atom_of_brick_binding_site, atom of linker binding site,]
 
     linker_brick_pairs = []
     for linker in cleaned_linkers:
@@ -79,7 +78,7 @@ def process_binding_data(raw_bricks, raw_linkers):
 
 
 def read_all(names, path):
-    
+
     raw_sdf = []
     for file in names:
         with open(path + file, "r") as f:
@@ -88,8 +87,10 @@ def read_all(names, path):
 
 
 def remol_smarts(m):
+
     return Chem.MolFromSmarts(Chem.MolToSmarts(m))
 
 
 def remol_smiles(m):
+
     return Chem.MolFromSmiles(Chem.MolToSmiles(m))
