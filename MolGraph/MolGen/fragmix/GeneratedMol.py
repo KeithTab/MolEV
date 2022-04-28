@@ -9,6 +9,7 @@ from MolBuilder import MolBuilder
 
 class GeneratedMol:
     def __init__(self, mol_binder_pairs, binder_mol_pairs, base_mols, binder_mols):
+  
         self.open_nodes = []
         self.bound_nodes = []
         self.recusion_ready = False
@@ -19,6 +20,7 @@ class GeneratedMol:
         self.binder_mols = binder_mols
 
     def enable_recursion(self, starter_indice):
+        
         mol_objs = self.make_base_objs(
             self.mol_binder_pairs, self.base_mols, self.binder_mols
         )
@@ -43,6 +45,7 @@ class GeneratedMol:
         self.recursion_ready = True
 
     def make_base_objs(self, matching_list, base_mol_list, binder_mol_list):
+ 
         mol_objs = []
         for i, mol in enumerate(base_mol_list):
             if matching_list[i]:
@@ -63,6 +66,7 @@ class GeneratedMol:
         return mol_objs
 
     def setup_recursive_objs(self, base_objs_list, binding_objs_list, matching_list):
+
         for i, base_obj in enumerate(base_objs_list):
             if base_obj.mol is not None:
                 list_of_binder_objs = []
@@ -72,6 +76,7 @@ class GeneratedMol:
                 )
 
     def bind(self, mol_a, mol_b, mol_a_atom, mol_b_atom):
+
         combined = Chem.CombineMols(mol_a, mol_b)
         editable_combined = Chem.EditableMol(combined)
         editable_combined.AddBond(
@@ -83,6 +88,7 @@ class GeneratedMol:
         return bound
 
     def skeletonize_binds(self, index, binder, base_indice, binder_indice):
+
         node_count = self.graph.number_of_nodes()
         self.graph.add_node(
             node_count, mol=binder, parent_atom=base_indice, binder_atom=binder_indice
@@ -91,6 +97,7 @@ class GeneratedMol:
         self.graph.add_edge(index, node_count)
 
     def finalize_bonds(self):
+
         finished = False
         while not finished:
             parent_of_leafs_list = [
@@ -123,6 +130,7 @@ class GeneratedMol:
         return cleaned_mol
 
     def step(self):
+
         assert self.recursion_ready is True
 
         open_linkers = []
@@ -156,6 +164,7 @@ class GeneratedMol:
             return True
 
     def generate(self):
+ 
         converged = False
         while not converged:
             converged = self.step()
