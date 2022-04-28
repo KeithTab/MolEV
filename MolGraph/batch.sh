@@ -1,6 +1,16 @@
 #!/bin/bash
 
-for ((i=1; i<=996; i++));
+#####################################
+#                                   #
+#    turn molecular to colormap     #
+#                                   #
+#####################################
+
+p=`ls -l |grep "^d"|wc -l`
+
+# first calculate the number of the 'geomparm out '$i.txt and make convenience to proceed a while.
+
+for ((i=1; i<=p-3; i++));
 do
 	mv 'geomparm out '$i.txt test_$i.txt
 	mkdir test_$i
