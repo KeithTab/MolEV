@@ -18,14 +18,14 @@ parser = argparse.ArgumentParser(
 )
 
 parser.add_argument(
-    "--i", type=str, help="results output dir", required=True
+    "--input_directory", type=str, help="emolfrag output dir", required=True
 )
 parser.add_argument(
-    "--o",
+    "--output_directory",
     type=str,
-    help="fragmix output dir",
+    help="emolcombiner output dir",
     required=False,
-    default="fragmixout/",
+    default="emolcombinerout/",
 )
 parser.add_argument(
     "--num_mols",
@@ -44,7 +44,7 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-base_path = args.i + "/"
+base_path = args.input_directory + "/"
 path_to_bricks = base_path + "output-brick/"
 path_to_linkers = base_path + "output-linker/"
 
@@ -61,6 +61,7 @@ brick_linker_pairs, linker_brick_pairs = process_binding_data(raw_bricks, raw_li
 
 
 def gen(i):
+
     G = GeneratedMol(brick_linker_pairs, linker_brick_pairs, mol_bricks, mol_linkers)
     G.enable_recursion(np.random.randint(0, len(mol_bricks) - 1))
     try:
@@ -69,11 +70,11 @@ def gen(i):
         out_mol = G.finalize_bonds()
         i += 1
         Chem.MolToMolFile(
-            out_mol, args.o + "{}.mol".format(i), kekulize=False
+            out_mol, args.output_directory + "{}.mol".format(i), kekulize=False
         )
         if args.draw:
             rdkit.Chem.Draw.MolToFile(
-                remol_smiles(out_mol), args.o + "ims/{}.png".format(i)
+                remol_smiles(out_mol), args.output_directory + "ims/{}.png".format(i)
             )
     except AttributeError as e:
         pass
@@ -81,12 +82,11 @@ def gen(i):
 
 
 try:
-    os.mkdir(args.o)
-    os.mkdir(args.o + "ims/")
+    os.mkdir(args.output_directory)
+    os.mkdir(args.output_directory + "ims/")
 except:
     print("directory already exists, continuing")
 
 i = 0
 while i < args.num_mols:
     i = gen(i)
-os.system("rm -rf args.o/*.mol2")
