@@ -1,7 +1,7 @@
-# Main Use for code in this directory
+# *Main Use for code in this directory
 Our main program for converting molecules to images is written in Go, where we compile it and integrate it with shell scripts to achieve batch output of images. Next, we will introduce the process and steps of operation.  
 
-#### 1. Generate executable program rgb2bmp(Ubuntu20 system)  
+#### 1. *Generate executable program rgb2bmp(Ubuntu20 system)  
 First of all, you need to configure the relevant environment.  
 ```
 sudo apt update && sudo apt upgrade -y
@@ -29,7 +29,7 @@ Dependencies:
 - multiprocessing
 - cudatoolkit = 11.1
 
-#### 3. Compile the exec transfer
+#### 3. *Compile the exec transfer
 ```
 go build rgb2bmp.go (-o) your filename
 export PATH=$PATH:/yourpathtoexec
@@ -100,7 +100,7 @@ When you need to merge the images to a color map, please run steps as follows:
 2. ./batch.sh
 ```
 
-## Results (Molcular to graph) 
+## *Results (Molcular to graph) 
 <p align="center">
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_1.bmp" width="200">
 &nbsp; &nbsp; &nbsp; &nbsp;
@@ -111,6 +111,6 @@ When you need to merge the images to a color map, please run steps as follows:
   <img alt="Light" src="https://github.com/CondaPereira/MolEV/blob/main/MolGraph/img/test_4.bmp" width="200">
 </p>
 
-## Notice && Reference
+## *Notice && Reference
 📩if you have any questions about runing these scripts, please send emails to szkchris@sina.com  
 [1]:Tian Lu, Feiwu Chen, Multiwfn: A Multifunctional Wavefunction Analyzer, J. Comput. Chem. 33, 580-592 (2012) DOI: 10.1002/jcc.22885
