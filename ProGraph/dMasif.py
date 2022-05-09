@@ -308,6 +308,6 @@ plot_structure = 'Pointcloud'
 if plot_structure == 'Pointcloud':
   view = show_pointcloud(target_pdb, coord, embedding)
 elif plot_structure == "Residues":
-  view = show_structure('/content/output/per_resi_binding.pdb')
+  view = show_structure('/home/szk/content/output/per_resi_binding.pdb')
 elif plot_structure == "Atoms":
-  view = show_structure('/content/output/per_atom_binding.pdb')
+  view = show_structure('/home/szk/content/output/per_atom_binding.pdb')
