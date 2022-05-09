@@ -7,7 +7,7 @@ As follow is the work of team VE_CPU-iDEC this year:
 
 Our model focuses on data extraction of three sets of data: the sum of bond lengths of molecules, the angle between two atoms, and the diagonal of parallelograms. The molecular information mentioned above is all in three dimensions, which can improve our docking model to some extent. In addition, the molecular 3D model we rendered is supported by blender.After counting these three sets of data we will convert them into HSV plots by a certain formula instead of RGB, and according to a lot of research, HSV is better than RGB in data science applications.  
 <div align=center>
-<img src="https://github.com/CondaPereira/MolEV/blob/main/images/Model_1.png" width="500">
+<img src="https://github.com/CondaPereira/MolEV/blob/main/images/Model_1.png" width="750">
 </div>  
 
 ### 1.Way to optimize our micromolcules
@@ -19,16 +19,16 @@ xtb /mnt/c/Users/chris/Downloads/sdf/smi/test/test_$i/test_$i.sdf --opt extreme 
 
 Of course, our model also encounters special cases, such as the following molecule with a ternary ring, in which case the model generates certain paradoxes in the theory, so we choose the middle atom Atom(Mid) among every three atoms as the vertex and create a spatial 3D vector with the two surrounding atoms.
 <div align=center>
-<img src="https://github.com/CondaPereira/MolEV/blob/main/images/Ternary%20ring.png" width="450">
+<img src="https://github.com/CondaPereira/MolEV/blob/main/images/Ternary%20ring.png" width="600">
 </div>
 The above is the optimization of the set of molecules that have not undergone high throughput screening. After the DDI design with MolEV, we will extract the ligand conformations with excellent scores and use quantum calculations to optimize their bond lengths for the next step of more specific quantum chemical calculations and calculate their physicochemical properties such as spectra.  
 <div align=center>
-<img src="https://github.com/CondaPereira/MolEV/blob/main/images/circuit.png" width="520">
+<img src="https://github.com/CondaPereira/MolEV/blob/main/images/circuit.png" width="750">
 </div>
 ### 2.QED function improvement
 In the past QED function, the following indicators were used to fit the function, but of course the following indicators all conform to the form of asymmetric functions, showing specific distribution curves: molecular weight (MW), octanol-water distribution coefficient (ALOGP), number of hydrogen bond donors (HBD), number of hydrogen bond acceptors (HBA), molecular polar surface area (PSA), number of rotatable bonds (ROTB), number of aromatic rings (AROM), number of structural cues (ALERTS), to which we propose to add the solubility term (logP), which plays an important role in assessing the drug-forming properties of small molecules.  
 <div align=center>
-<img src="https://github.com/CondaPereira/MolEV/blob/main/images/CPDN.png" width="520">
+<img src="https://github.com/CondaPereira/MolEV/blob/main/images/CPDN.png" width="750">
 </div>
 And since ClogP satisfies the asymmetric distribution, it is consistent with the ADS fitting function given in the literature as follows.  
 
