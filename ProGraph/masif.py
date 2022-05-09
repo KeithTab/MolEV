@@ -3,14 +3,36 @@
 ## 3.REFERENCE: https://github.com/casperg92/dMasif
 
 import os
+import sys
 import glob
+sys.path.append("/home/szk/content/MaSIF_colab") 
+sys.path.append("/home/szk/content/MaSIF_colab/data_preprocessing") 
+import numpy as np
+import pykeops
+import torch
+from Bio.PDB import *
+from data_preprocessing.download_pdb import convert_to_npy
+from torch_geometric.data import DataLoader
+from torch_geometric.transforms import Compose
+import argparse
+import shutil
+
+from data import ProteinPairsSurfaces, PairData, CenterPairAtoms, load_protein_pair
+from data import RandomRotationPairAtoms, NormalizeChemFeatures, iface_valid_filter
+from model import dMaSIF
+from data_iteration import iterate
+from helper import *
+
+import nglview as ng
+from pdbparser.pdbparser import pdbparser
+
 pred_dir = '/home/szk/content/pdbs'
 isExist = os.path.exists(pred_dir)
 if not isExist:
   os.makedirs(pred_dir)
 
 os.chdir('/home/szk/content')
-target_pdb = "/home/szk/content/pdbs/1aki.pdb" 
+target_pdb = "/home/szk/content/pdbs/1.pdb" 
 target_name = target_pdb.split('/')
 target_name = target_name[-1].split('.')
 
@@ -76,30 +98,6 @@ else:
   files = glob.glob(pred_dir + '/*')
   for f in files:
     os.remove(f)
-
-import sys
-sys.path.append("/home/szk/content/MaSIF_colab") 
-sys.path.append("/home/szk/content/MaSIF_colab/data_preprocessing") 
-
-import numpy as np
-import pykeops
-import torch
-from Bio.PDB import *
-from data_preprocessing.download_pdb import convert_to_npy
-from torch_geometric.data import DataLoader
-from torch_geometric.transforms import Compose
-import argparse
-import shutil
-
-from data import ProteinPairsSurfaces, PairData, CenterPairAtoms, load_protein_pair
-from data import RandomRotationPairAtoms, NormalizeChemFeatures, iface_valid_filter
-from model import dMaSIF
-from data_iteration import iterate
-from helper import *
-
-import nglview as ng
-from pdbparser.pdbparser import pdbparser
-
 
 def generate_descr(model_path, output_path, pdb_file, npy_directory, radius, resolution,supsampling):
 
