@@ -10,7 +10,7 @@ Our model focuses on data extraction of three sets of data: the sum of bond leng
 <img src="https://github.com/CondaPereira/MolEV/blob/main/images/Model_1.png" width="750">
 </div>  
 
-### 1.Way to optimize our micromolcules
+### 1.Way to optimize our micromolcules  
 We will develop a deep learning based molecule generation framework and compare it with the optimized small molecule structures from the other two approaches and measure the accuracy of our model by this criterion, now we have mainly optimized the small molecule bulk structure of xtb at GFN2-xtb level and bulk small molecule optimization under the MMFF force field of RDkit, the model ConfEVG is still in the development stage and will be updated at a later stage.  
 ```
 xtb /mnt/c/Users/chris/Downloads/sdf/smi/test/test_$i/test_$i.sdf --opt extreme --charge 0 --alpb water
@@ -24,8 +24,10 @@ Of course, our model also encounters special cases, such as the following molecu
 The above is the optimization of the set of molecules that have not undergone high throughput screening. After the DDI design with MolEV, we will extract the ligand conformations with excellent scores and use quantum calculations to optimize their bond lengths for the next step of more specific quantum chemical calculations and calculate their physicochemical properties such as spectra.  
 <div align=center>
 <img src="https://github.com/CondaPereira/MolEV/blob/main/images/circuit.png" width="750">
-</div>
-### 2.QED function improvement
+</div>  
+
+### 2.QED function improvement  
+
 In the past QED function, the following indicators were used to fit the function, but of course the following indicators all conform to the form of asymmetric functions, showing specific distribution curves: molecular weight (MW), octanol-water distribution coefficient (ALOGP), number of hydrogen bond donors (HBD), number of hydrogen bond acceptors (HBA), molecular polar surface area (PSA), number of rotatable bonds (ROTB), number of aromatic rings (AROM), number of structural cues (ALERTS), to which we propose to add the solubility term (logP), which plays an important role in assessing the drug-forming properties of small molecules.  
 <div align=center>
 <img src="https://github.com/CondaPereira/MolEV/blob/main/images/CPDN.png" width="750">
