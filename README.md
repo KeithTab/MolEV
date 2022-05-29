@@ -1,5 +1,5 @@
 # MolEV
-[![Header](https://github.com/CondaPereira/MolEV/blob/main/images/team.png "Header")](https://some-url.dev/)
+[![Header](https://github.com/CondaPereira/MolEV/blob/main/images/1.png "Header")](https://some-url.dev/)
 --------------------------------------------------------------------------------
 As follow is the work of team VE_CPU-iDEC this year:
 
