@@ -5,30 +5,12 @@ As follow is the work of team VE_CPU-iDEC this year:
 
 **Table of Contents**
 
-- [TimelineJS](#timelinejs)
-	- [Document history with TimelineJS](#document-history-with-timelinejs)
-	- [Add it to your site](#add-it-to-your-site)
-		- [Using Inline (easiest)](#using-inline-easiest)
-		- [Using a method (advanced)](#using-a-method-advanced)
-		- [Loading the files](#loading-the-files)
-	- [Config Options](#config-options)
-		- [Language](#language)
-		- [Start at End](#start-at-end)
-		- [Start at Slide](#start-at-slide)
-		- [Start Zoom Adjust](#start-zoom-adjust)
-		- [Hash Bookmark](#hash-bookmark)
-		- [Debug](#debug)
-		- [Map Style Types](#map-style-types)
-		- [Font Options](#font-options)
-			- [Font Combination Preview:](#font-combination-preview)
-	- [File Formats](#file-formats)
-		- [JSON:](#json)
-		- [JSONP :](#jsonp-)
-		- [Google Docs:](#google-docs)
-		- [Storify:](#storify)
-	- [Media](#media)
-	- [Best practices](#best-practices)
-	- [License](#license)
+- [Micromolecular Model Setup ](#micromolecular-model-setup)
+	- [Way to optimize our micromolcules](#way-to-optimize-our-micromolecules)
+		- [Notice](#notice)
+	- [QED function improvement](#qed-function-improvement)
+- [Protein Model Setup](#protein-model-setup)
+- [Work Timeline](#work-timeline)
 
 ## 1.Micromolecular Model Setup  
 
@@ -70,5 +52,5 @@ The protein-based model is still under development, and the dataset we use is ma
 PDBbind link: http://www.pdbbind.org.cn/quickpdb.php?quickpdb=5ho7  
 Uniprot link: https://www.uniprot.org/uniprot/?query=Human&sort=score  
 
-## 3.Work Timeline(Updating)
+## 3.Work Timeline
 
