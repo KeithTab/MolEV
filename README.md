@@ -5,12 +5,12 @@ As follow is the work of team VE_CPU-iDEC this year:
 
 **Table of Contents**
 
-- [Micromolecular Model Setup ](#micromolecular-model-setup)
-	- [Way to optimize our micromolcules](#way-to-optimize-our-micromolecules)
+- [1.Micromolecular Model Setup ](#micromolecular-model-setup)
+	- [1.Way to optimize our micromolcules](#way-to-optimize-our-micromolecules)
 		- [Notice](#notice)
-	- [QED function improvement](#qed-function-improvement)
-- [Protein Model Setup](#protein-model-setup)
-- [Work Timeline](#work-timeline)
+	- [2.QED function improvement](#qed-function-improvement)
+- [2.Protein Model Setup](#protein-model-setup)
+- [3.Work Timeline](#work-timeline)
 
 ## 1.Micromolecular Model Setup  
 
