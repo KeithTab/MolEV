@@ -4,7 +4,6 @@
 As follow is the work of team VE_CPU-iDEC this year:
 
 - [MolEV](#molev)
-	- [![Header](https://some-url.dev/)](#)
 	- [1.Micromolecular Model Setup](#1micromolecular-model-setup)
 		- [1.Way to optimize our micromolcules](#1way-to-optimize-our-micromolcules)
 			- [Notice:](#notice)
