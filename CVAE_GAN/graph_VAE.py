@@ -238,7 +238,7 @@ if __name__ == '__main__':
     nz = 7500
     # nz = 5120
     # nepoch = 1250
-    nepoch = 10
+    nepoch = 1250
 
     # ae_z = 64
     ae_z = 46
