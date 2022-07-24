@@ -243,8 +243,8 @@ if __name__ == '__main__':
     # ae_z = 64
     ae_z = 46
 
-    # if not os.path.exists('./img_CVAE-GAN'):
-    #     os.mkdir('./img_CVAE-GAN')
+    if not os.path.exists('./img_CVAE-GAN'):
+         os.mkdir('./img_CVAE-GAN')
     print("Random Seed: 42")
     random.seed(42)
     torch.manual_seed(42)
