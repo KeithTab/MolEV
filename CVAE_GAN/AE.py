@@ -62,7 +62,7 @@ if __name__ == '__main__':
     batchSize = 32
     imageSize = 567
     nz = 5120
-    nepoch = 5
+    nepoch = 128
     # if not os.path.exists('./img_CVAE-GAN'):
     #     os.mkdir('./img_CVAE-GAN')
     print("Random Seed: 42")
