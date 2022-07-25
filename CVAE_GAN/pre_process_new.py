@@ -26,7 +26,7 @@ for file in load_file():
     np_lst.append(mg_cg)
     print(file,mg_cg.shape)
     file_num+=1
-    if file_num==10:break
+    if file_num==14573:break
 np_data = np.array(np_lst)
 print(np_data.shape)
 #     print(out.size)
